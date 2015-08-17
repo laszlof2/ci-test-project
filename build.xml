@@ -1,0 +1,11 @@
+<project>
+  <target name="phpunit" description="Run unit tests with PHPUnit">
+    <exec dir="${basedir}" executable="composer" failonerror="true">
+      <arg value="install" />
+    </exec>
+    <exec dir="${basedir}" executable="phpunit" failonerror="true">
+      <arg value="-c" />
+      <arg value="${basedir}/phpunit.xml" />
+    </exec>
+  </target>
+</project>
