@@ -1,6 +1,7 @@
 <?php
 
 class NumbersTest extends PHPUnit_Framework_TestCase {
+  
   public function testGetOne() {
     $num = new \NocWorx\Stuff\Numbers();
     $this->assertEquals(1, $num->getOne());
