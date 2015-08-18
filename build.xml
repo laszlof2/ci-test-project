@@ -3,7 +3,7 @@
     <exec dir="${basedir}" executable="composer" failonerror="true">
       <arg value="install" />
     </exec>
-    <exec dir="${basedir}" executable="phpunit" failonerror="true">
+    <exec dir="${basedir}" executable="$vendor/phpunit/phpunit/phpunit" failonerror="true">
       <arg value="-c" />
       <arg value="${basedir}/phpunit.xml" />
     </exec>
