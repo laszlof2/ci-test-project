@@ -9,4 +9,3 @@ setup:
 
 test:
   php_unit:
-  php_code_sniffer:
