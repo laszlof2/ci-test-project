@@ -6,13 +6,13 @@ build_settings:
 setup:
   composer:
     action: "install"
-
+  hipchat_notify:
+    authToken: 8yd5GL1xZh1Bzm9mFPXUJTL7HhwILNPySOAgJJsD
+    room: 29967
+    message: <b>%PROJECT_TITLE%</b> - build <a href="%BUILD_URI%">%BUILD%</a> failed!
+    color: red
+    notify: true
+    v2Api: true
+    
 test:
   php_unit:
-hipchat_notify:
-  authToken: 8yd5GL1xZh1Bzm9mFPXUJTL7HhwILNPySOAgJJsD
-  room: 29967
-  message: <b>%PROJECT_TITLE%</b> - build <a href="%BUILD_URI%">%BUILD%</a> failed!
-  color: red
-  notify: true
-  v2Api: true
