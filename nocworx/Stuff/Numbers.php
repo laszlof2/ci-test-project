@@ -10,7 +10,7 @@ class Numbers {
   private $_five = 4;
   private $_six = 6;
   private $_seven = 7;
-  private $_eight = 8;
+  private $_eight = 9;
   private $_nine = 9;
   private $_ten = 10;
 
