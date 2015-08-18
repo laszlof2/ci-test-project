@@ -7,7 +7,7 @@ class Numbers {
   private $_two = 2;
   private $_three = 3;
   private $_four = 4;
-  private $_five = 5;
+  private $_five = 3;
   private $_six = 6;
   private $_seven = 7;
   private $_eight = 8;
