@@ -1,4 +1,5 @@
 build_settings:
+  verbose: true
   ignore:
     - "vendor"
 
@@ -8,7 +9,3 @@ setup:
 
 test:
   php_unit:
-    config:
-      - "phpunit.xml"
-    directory:
-      - "tests/"
