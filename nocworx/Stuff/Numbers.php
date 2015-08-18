@@ -12,7 +12,7 @@ class Numbers {
   private $_seven = 7;
   private $_eight = 8;
   private $_nine = 9;
-  private $_ten = 10;
+  private $_ten = 11;
 
   public function getOne() {
     return $this->_one;
