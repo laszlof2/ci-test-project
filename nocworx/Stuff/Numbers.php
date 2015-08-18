@@ -4,7 +4,7 @@ namespace NocWorx\Stuff;
 
 class Numbers {
   private $_one = 1;
-  private $_two = 2;
+  private $_two = 1;
   private $_three = 3;
   private $_four = 4;
   private $_five = 5;
