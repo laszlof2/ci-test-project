@@ -28,9 +28,9 @@ class Numbers {
   }
   public function getFive() {
     return $this->_five;
-  }  
+  }
   public function getSix() {
-                                                  return $this->_six;
+                                                     return $this->_six;
   }
   public function getSeven() {
     return $this->_seven;
