@@ -10,7 +10,7 @@ class Numbers {
   private $_five = 5;
   private $_six = 6;
   private $_seven = 7;
-  private $_eight = 8;
+  private $_eight = 9;
   private $_nine = 9;
   private $_ten = 10;
 
@@ -30,7 +30,7 @@ class Numbers {
     return $this->_five;
   }
   public function getSix() {
-    return $this->_six;
+                                                  return $this->_six;
   }
   public function getSeven() {
     return $this->_seven;
