@@ -1,5 +1,5 @@
 <phpdox xmlns="http://xml.phpdox.net/config">
- <project name="ci-test-project" source="src" workdir="build/phpdox">
+ <project name="ci-test-project" source="nocworx" workdir="build/phpdox">
   <collector publiconly="false">
    <include mask="*.php" />
   </collector>
