@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="ci-test-project" default="full-build">
  <!-- By default, we assume all tools to be on the $PATH -->
- <property name="pdepend" value="pdepend"/>
- <property name="phpcpd"  value="phpcpd"/>
- <property name="phpcs"   value="phpcs"/>
- <property name="phploc"  value="phploc"/>
- <property name="phpmd"   value="phpmd"/>
- <property name="phpunit" value="phpunit"/>
+ <property name="pdepend"   value="pdepend"/>
+ <property name="phpcpd"    value="phpcpd"/>
+ <property name="phpcs"     value="phpcs"/>
+ <property name="phploc"    value="phploc"/>
+ <property name="phpmd"     value="phpmd"/>
+ <property name="phpunit"   value="phpunit"/>
+ <property name="composer"  value="composer"/>
 
  <target name="full-build"
          depends="prepare,static-analysis,phpunit,-check-failure"
@@ -36,9 +37,9 @@
   <mkdir dir="${basedir}/build/logs"/>
   <mkdir dir="${basedir}/build/pdepend"/>
   <mkdir dir="${basedir}/build/phpdox"/>
-  <execute executable="composer">
-    <arg value="install" />
-  </execute>
+  <exec executable="${composer}" taskname="composer">
+    <arg value="install"/>
+  </exec>
   <property name="prepare.done" value="true"/>
  </target>
 
