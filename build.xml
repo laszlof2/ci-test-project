@@ -7,6 +7,7 @@
  <property name="phploc"    value="phploc"/>
  <property name="phpmd"     value="phpmd"/>
  <property name="phpunit"   value="phpunit"/>
+ <property name="phpdox"    value="phpdox"/>
  <property name="composer"  value="composer"/>
 
  <target name="full-build"
