@@ -10,7 +10,7 @@
  <property name="composer"  value="composer"/>
 
  <target name="full-build"
-         depends="prepare,static-analysis,phpunit,-check-failure"
+         depends="prepare,static-analysis,phpunit,phpdox,-check-failure"
          description="Performs static analysis, runs the tests, and generates project documentation"/>
 
  <target name="static-analysis"
@@ -214,6 +214,15 @@
   </exec>
 
   <property name="phpunit.done" value="true"/>
+ </target>
+
+ <target name="phpdox"
+         unless="phpdox.done"
+         depends="phploc-ci,phpcs-ci,phpmd-ci"
+         description="Generate project documentation using phpDox">
+  <exec executable="${phpdox}" dir="${basedir}/build" taskname="phpdox"/>
+
+  <property name="phpdox.done" value="true"/>
  </target>
 
  <target name="-check-failure">
