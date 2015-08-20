@@ -192,8 +192,6 @@
          depends="prepare"
          description="Run unit tests with PHPUnit">
   <exec dir="${basedir}" executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
-   <arg value="-c"/>
-   <arg value="${basedir}/build/phpunit.xml"/>
    <arg value="--coverage-html"/>
    <arg value="${basedir}/build/coverage"/>
    <arg value="--coverage-clover"/>
@@ -202,7 +200,6 @@
    <arg value="${basedir}/build/logs/crap4j.xml"/>
    <arg value="--log-junit"/>
    <arg value="${basedir}/build/logs/junit.xml"/>
-   <arg value="${basedir}/nocworx"/>
   </exec>
 
   <property name="phpunit.done" value="true"/>
@@ -213,8 +210,6 @@
          depends="prepare"
          description="Run unit tests with PHPUnit (without generating code coverage reports)">
   <exec executable="${phpunit}" failonerror="true" taskname="phpunit">
-   <arg value="--configuration"/>
-   <arg path="${basedir}/build/phpunit.xml"/>
    <arg value="--no-coverage"/>
   </exec>
 
