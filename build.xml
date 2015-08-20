@@ -195,8 +195,6 @@
   <exec dir="${basedir}" executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
    <arg value="--coverage-html"/>
    <arg value="${basedir}/build/coverage"/>
-   <arg value="--coverage-clover"/>
-   <arg value="${basedir}/build/logs/clover.xml"/>
    <arg value="--coverage-crap4j"/>
    <arg value="${basedir}/build/logs/crap4j.xml"/>
    <arg value="--log-junit"/>
