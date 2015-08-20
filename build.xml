@@ -191,9 +191,9 @@
          unless="phpunit.done"
          depends="prepare"
          description="Run unit tests with PHPUnit">
-  <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
+  <exec dir="${basedir}" executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
    <arg value="-c"/>
-   <arg file="${basedir}/build/phpunit.xml"/>
+   <arg value="${basedir}/build/phpunit.xml"/>
   </exec>
 
   <property name="phpunit.done" value="true"/>
