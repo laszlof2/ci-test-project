@@ -202,6 +202,7 @@
    <arg value="${basedir}/build/logs/crap4j.xml"/>
    <arg value="--log-junit"/>
    <arg value="${basedir}/build/logs/junit.xml"/>
+   <arg value="${basedir}/nocworx"/>
   </exec>
 
   <property name="phpunit.done" value="true"/>
