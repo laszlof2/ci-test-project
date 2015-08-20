@@ -9,14 +9,17 @@ class Numbers {
   private $_four = 4;
   private $_five = 5;
   private $_six = 6;
-  private $_seven = 7;
+  private $_seven = 8;
   private $_eight = 8;
   private $_nine = 9;
   private $_ten = 10;
 
   public function getOne() {
-    return $this->_one;
+            return $this->_one;
   }
+
+
+
   public function getTwo() {
     return $this->_two;
   }
