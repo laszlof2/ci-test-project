@@ -1,11 +1,13 @@
 <?php
 
+namespace NocWorx;
+
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
 require_once '../../vendor/autoload.php';
 
-$num = new \NocWorx\Stuff\Numbers();
+$num = new Stuff\Numbers();
 
 echo "<pre>";
 
