@@ -17,9 +17,6 @@ class Numbers {
   public function getOne() {
             return $this->_one;
   }
-
-
-
   public function getTwo() {
     return $this->_two;
   }
