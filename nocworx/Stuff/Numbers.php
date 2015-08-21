@@ -47,8 +47,4 @@ class Numbers {
   public function getTen() {
     return $this->_ten;
   }
-  public function set($key, $num) {
-    $key = "_".$key;
-    $this->{$key} = $num;
-  }
 }
