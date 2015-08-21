@@ -18,6 +18,5 @@ echo "4 = " . $num->getFour() . "\n";
 echo "5 = " . $num->getFive() . "\n";
 echo "6 = " . $num->getSix() . "\n";
 echo "7 = " . $num->getSeven() . "\n";
-echo "8 = " . $num->getEight() . "\n";
 
 echo "</pre>";
