@@ -7,13 +7,11 @@ require_once '../../vendor/autoload.php';
 
 $num = new \NocWorx\Stuff\Numbers();
 
-echo $num->getOne();
-echo $num->getTwo();
-echo $num->getThree();
-echo $num->getFour();
-echo $num->getFive();
-echo $num->getSix();
-echo $num->getSeven();
-echo $num->getEight();
-echo $num->getNine();
-echo $num->getTen();
+echo "<pre>";
+
+echo "1 = " . $num->getOne() . "\n";
+echo "2 = " . $num->getTwo() . "\n";
+echo "3 = " . $num->getThree() . "\n";
+echo "4 = " . $num->getFour() . "\n";
+
+echo "</pre>";
